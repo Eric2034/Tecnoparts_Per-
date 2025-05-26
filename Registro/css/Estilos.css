@@ -1,0 +1,150 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    font-family: 'Arial', sans-serif;
+}
+
+body {
+    background: linear-gradient(
+        135deg,
+        rgb(25, 0, 255) 0%,
+        rgb(94, 94, 206) 50%,
+        rgb(255, 255, 255) 100%
+    );
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+.Post {
+    background-color: rgba(255, 255, 255, 0.9);
+    border-radius: 15px;
+    padding: 30px;
+    width: 100%;
+    max-width: 500px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+    text-align: center;
+}
+
+h2 {
+    color: rgb(0, 0, 0);
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+
+.campo-formulario {
+    margin-bottom: 20px;
+    text-align: left;
+}
+
+.campo-formulario label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: 600;
+    color: #333;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="password"] {
+    width: 100%;
+    padding: 12px 15px;
+    font-size: 1rem;
+    border: 2px solid #ddd;
+    border-radius: 8px;
+    background-color: rgba(255, 255, 255, 0.8);
+    transition: all 0.3s ease;
+}
+
+input[type="text"]:focus,
+input[type="email"]:focus,
+input[type="password"]:focus {
+    border-color: rgb(47, 0, 255);
+    box-shadow: 0 5px 15px rgba(0, 17, 255, 0.2);
+    outline: none;
+}
+
+button[type="submit"] {
+    background-color: rgb(22, 57, 214);
+    color: white;
+    border: none;
+    padding: 12px 25px;
+    font-size: 1rem;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    width: 100%;
+    font-weight: 600;
+    margin-top: 10px;
+}
+
+button[type="submit"]:hover {
+    background-color: rgb(4, 4, 128);
+    box-shadow: 0 5px 15px rgba(0, 17, 255, 0.4);
+    transform: translateY(-2px);
+}
+
+.Descrip {
+    margin-top: 20px;
+    color: #333;
+}
+
+a {
+    color: darkblue;
+    font-weight: 600;
+    transition: color 0.3s ease;
+}
+
+a:hover {
+    color: rgb(0, 0, 180);
+}
+
+/* Estilos para móviles */
+@media (max-width: 600px) {
+    body {
+        padding: 10px;
+    }
+    
+    .Post {
+        padding: 20px;
+    }
+    
+    input[type="text"],
+    input[type="email"],
+    input[type="password"] {
+        padding: 10px 12px;
+    }
+}
+
+.opciones-adicionales {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 15px 0;
+}
+
+.recordar {
+    display: flex;
+    align-items: center;
+}
+
+.recordar label {
+    margin-left: 8px;
+    font-size: 0.9rem;
+}
+
+.olvido {
+    font-size: 0.9rem;
+    color: #0066cc;
+    text-decoration: underline;
+}
+
+.olvido:hover {
+    color: #004499;
+}

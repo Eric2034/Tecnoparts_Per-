@@ -1,0 +1,111 @@
+/* Estilos generales */
+body {
+    min-height: 100vh;
+}
+
+/* Estilos para las imágenes de productos */
+.product-image {
+    max-height: 300px;
+    width: auto;
+    object-fit: cover;
+}
+
+/* Estilos para el footer */
+.footer {
+    background: linear-gradient(to right, #0d6efd, #0b5ed7);
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+}
+
+.footer-content {
+    padding-top: 0.5rem;
+    padding-bottom: 0.25rem;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+    animation: Color 5.5s infinite;
+}
+
+.card {
+    box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+    margin-top: 30px;
+    width: 100px;
+    height: 510px;
+}
+
+
+@keyframes Color {
+    10%{
+        background: linear-gradient(
+            rgba(145, 144, 144, 0.5),
+            rgba(88, 88, 88, 0.5),
+            rgba(214, 214, 214, 0.5)
+        );
+    }
+    50%{
+        background: linear-gradient(
+            rgba(255, 255, 255, 0.5),
+            rgba(88, 88, 88, 0.5),
+            rgba(102, 101, 101, 0.5)
+        );
+    }
+    100%{
+        background: linear-gradient(
+            rgba(109, 108, 108, 0.5),
+            rgba(88, 88, 88, 0.5),
+            rgba(214, 214, 214, 0.5)
+        );
+    }
+    0%{
+        background: linear-gradient(
+            rgba(255, 255, 255, 0.5),
+            rgba(88, 88, 88, 0.5),
+            rgba(126, 125, 125, 0.5)
+        );
+    }
+}
+/* Estilos para los botones */
+#btn-success {
+    background-color: #4CAF50;
+    padding: 5px;
+    color: #ffffff;
+}
+
+#Crea a{
+    margin: 45px;
+}
+
+.btn-primary:hover {
+    background-color: #0b5ed7;
+    border-color: #3c4758;
+}
+
+#btn-success:hover {
+    background-color: #198754;
+    border-color: #157347;
+    color: black;
+}
+
+/* Estilo para el nombre del usuario */
+.navbar ul li span {
+    display: inline-block;
+    padding: 10px 15px;
+    color: #4CAF50;
+    font-weight: bold;
+}
+
+/* Estilo para el botón de cerrar sesión */
+.navbar ul li [href*="logout.php"] {
+    color: #f44336;
+    transition: color 0.3s;
+}
+
+.navbar ul li [href*="logout.php"]:hover {
+    color: #d32f2f;
+}
+
+a {
+    text-decoration: none;
+}
